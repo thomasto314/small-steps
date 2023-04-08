@@ -1,0 +1,243 @@
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button#create-project {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.project-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item:hover {
+    background-color: #e0e0e0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.project-container {
+    margin: 50px 20px;
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.project-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-container li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.project-container li ul {
+    margin-bottom: 10px;
+}
+
+.project-container li ul li {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 5px 0;
+}
+
+#app {
+    margin: 50px auto;
+    max-width: 50%;
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+li span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Add this to style done items */
+li.done {
+    color: gray;
+}
+
+/* Add this to style scrollbar */
+ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #008cba;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background-color: #0077a3;
+}
+
+.loading-circle {
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add this to style done items */
+li.done,
+li.done span {
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* Add this to style the "Clarify" button */
+button.clarify-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+}
+
+.main-list-btn {
+    background-color: #0077a3;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.project-edit-button,
+.project-download-pdf-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+.draggable {
+    cursor: move;
+    opacity: 0.8;
+}
+
+.drag-over {
+    border-top: 2px solid #3498db;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li.draggable {
+    opacity: 0.5;
+}
+
+.nested-list-container {
+    width: 570px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prj-item-delete-btn {
+    border: none;
+    padding: 5px;
+}
